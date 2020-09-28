@@ -6,12 +6,7 @@ import renderer from 'react-test-renderer';
 describe('List component', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<List key={4}
-            header='Fourth list'
-            cards={[
-                {'l': { id: 'l', title: 'Twelfth card', content: 'lorem ipsum' }},
-                {'m': { id: 'm', title: 'Thirteenth card', content: 'lorem ipsum' }}
-            ]} />, div);
+        ReactDOM.render(<List />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
 
@@ -22,8 +17,8 @@ describe('List component', () => {
                     key={4}
                     header='Fourth list'
                     cards={[
-                        {'l': { id: 'l', title: 'Twelfth card', content: 'lorem ipsum' }},
-                        {'m': { id: 'm', title: 'Thirteenth card', content: 'lorem ipsum' }}
+                        { id: 'l', title: 'Twelfth card', content: 'lorem ipsum' },
+                        { id: 'm', title: 'Thirteenth card', content: 'lorem ipsum' }
                     ]}
                 />)
             .toJSON();

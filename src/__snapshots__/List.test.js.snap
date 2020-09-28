@@ -18,26 +18,37 @@ exports[`List component renders the UI as expected 1`] = `
       className="Card"
     >
       <button
+        onClick={[Function]}
         type="button"
       >
         delete
       </button>
-      <h3 />
-      <p />
+      <h3>
+        Twelfth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
     </div>
     <div
       className="Card"
     >
       <button
+        onClick={[Function]}
         type="button"
       >
         delete
       </button>
-      <h3 />
-      <p />
+      <h3>
+        Thirteenth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
     </div>
     <button
       className="List-add-button"
+      onClick={[Function]}
       type="button"
     >
       + Add Random Card
